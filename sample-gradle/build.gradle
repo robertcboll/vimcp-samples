@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	testCompile 'junit:junit:4.11'
+
+	compile 'com.google.guava:guava:18.0'
+}
+
+task showTest << {
+	println sourceSets.test.compileClasspath.asPath
+}
+
+task showCompile << {
+	println sourceSets.main.compileClasspath.asPath
+}
