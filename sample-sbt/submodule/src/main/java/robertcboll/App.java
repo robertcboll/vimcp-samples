@@ -3,6 +3,8 @@ package robertcboll;
 import com.google.common.collect.ImmutableList;
 import java.util.List;
 import robertcboll.testpkg.Another;
+import java.util.Set;
+import java.util.HashSet;
 
 /**
  * Hello world!
@@ -18,8 +20,7 @@ public final class App {
     a.doSomething();
     List<String> l = ImmutableList.of();
 
-    java.util.Set<String> set = new java.util.HashSet<>();
-
+    Set<String> set = new HashSet<>();
     com.google.common.annotations.Beta b;
   }
 }
